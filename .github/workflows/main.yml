@@ -17,8 +17,8 @@ jobs:
             - ubuntu-latest
               #- windows-latest
         ocaml-compiler:
-            - '4.03.x'
-            - '4.14.x'
+            - '5.0.0~rc1'
+            - 'ocaml-variants.5.0.0~rc1+options,ocaml-option-bytecode-only'
 
     runs-on: ${{ matrix.os }}
     steps:
