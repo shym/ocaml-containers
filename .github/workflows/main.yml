@@ -9,11 +9,11 @@ jobs:
       fail-fast: true
       matrix:
         os:
-            - macos-latest
             - ubuntu-latest
+              # - macos-latest
               #- windows-latest
         ocaml-compiler:
-            - '5.0.0~rc1'
+            - 'ocaml-base-compiler.5.0.0~rc1'
             - 'ocaml-variants.5.0.0~rc1+options,ocaml-option-bytecode-only'
 
     runs-on: ${{ matrix.os }}
