@@ -13,8 +13,8 @@ jobs:
               # - macos-latest
               #- windows-latest
         ocaml-compiler:
-            - 'ocaml-base-compiler.5.0.0~rc1'
-            - 'ocaml-variants.5.0.0~rc1+options,ocaml-option-bytecode-only'
+            - 'ocaml-base-compiler.5.0.0'
+            - 'ocaml-variants.5.0.0+options,ocaml-option-bytecode-only'
 
     runs-on: ${{ matrix.os }}
     steps:
